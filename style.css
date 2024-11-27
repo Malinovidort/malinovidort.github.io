@@ -1,0 +1,55 @@
+html,body {
+    background-color: #242842;
+    padding: 0 5px;
+    list-style: square inside;
+}
+p,li,a,small,h1,h2,h3,h4 {
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+a:link,a:visited {
+    color: rgb(73, 136, 209);
+}
+h1 {
+    text-align: left;
+}
+small {
+    color: lightgray;
+}
+button {
+    background-color: #1a1a1a;
+}
+
+.details:has(details) {
+    max-height: 25px;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    font-family: sans-serif;
+}
+.details:has(details[open]) {
+    max-height: 1000px;
+    font-family: sans-serif;
+}
+
+/* Summary button hover styling */
+summary {
+    transition: transform 0.25s ease;
+}
+summary:hover {
+    transform: translateY(1px);
+    cursor: pointer;
+}
+summary:not(:hover) {
+    transform: translateY(0px);
+}
+
+.details {
+    background-color: #3441a3;
+    padding: 15px;
+    width: 30%;
+    margin: 25px left;
+    border-radius: 5px;
+    text-align: left;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
